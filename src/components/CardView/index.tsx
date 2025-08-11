@@ -1,8 +1,13 @@
-import { View, Text } from "react-native";
+import { View, Text, Image } from "react-native";
 import { styles } from "./style";
+import Logo from "../../../assets/logo.png"
 
 export default function CardView(){
-    <View style={styles.imageContainer}>
-        <Text> CardView Works!!</Text>
-    </View>
+    return (
+        <View style={styles.imageContainer}>
+            <View style={styles.logoContainer}>
+                <Image style={styles.imageLogo} source={Logo} />
+            </View>
+        </View>
+    )
 }
