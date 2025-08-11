@@ -10,21 +10,21 @@ export default function CardView(){
             <View style={styles.logoContainer}>
                 <Image style={styles.imageLogo} source={Logo} />
             </View>
-    )
+    );
 
     const renderCarDetails = () => (
         <View style={{ alignItems: "center" }}>
             <Text style={styles.carBrand}>Lamborghini</Text>
             <Text style={styles.carName}>MODEL</Text>
         </View>
-    )
+    );
 
     const renderCarImage = () => (
         <Image
             style={styles.image}
             source={{ uri:`${CAR_ASSETS_BASE_URL}1.png` }}
         />
-    )
+    );
 
     return (
         <View style={styles.imageContainer}>
@@ -33,6 +33,6 @@ export default function CardView(){
             {renderCarDetails()}
             {renderCarImage()}
         </View>
-    )
+    );
 }
 
