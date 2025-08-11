@@ -6,5 +6,5 @@ export default function Divider(){
         <View style={styles.dividerContainer}>
             <View style={styles.divider}></View>
         </View>
-    )
+    );
 }
