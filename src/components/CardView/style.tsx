@@ -31,5 +31,11 @@ export const styles = StyleSheet.create({
         fontSize: 20,
         fontWeight: "bold",
         textAlign: "center"
+    },
+    image: {
+        flex: 1,
+        marginBottom: 10,
+        width: "100%",
+        height: "100%"
     }
 })
