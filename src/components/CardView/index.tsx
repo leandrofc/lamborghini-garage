@@ -3,6 +3,7 @@ import { styles } from "./style";
 import Logo from "../../../assets/logo.png"
 import Divider from "../Divider";
 import { CAR_ASSETS_BASE_URL } from "../../constants/car";
+import BuyButton from "../BuyButton";
 
 export default function CardView(){
 
@@ -29,10 +30,14 @@ export default function CardView(){
     return (
         <View style={styles.imageContainer}>
             {renderLogoBox()}
+
             <Divider />
             {renderCarDetails()}
             {renderCarImage()}
+
+            <Divider />
+
+            <BuyButton />
         </View>
     );
 }
-
