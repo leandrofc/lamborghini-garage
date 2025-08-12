@@ -1,4 +1,4 @@
-import { View, Text, Image } from "react-native";
+import { View, Text, Image, Button } from "react-native";
 import { styles } from "./style";
 import Logo from "../../../assets/logo.png"
 import Divider from "../Divider";
@@ -27,6 +27,14 @@ export default function CardView(){
         />
     );
 
+    const renderPriceControls = () => (
+        <View style={styles.priceLabelContainer}>
+            <Button title="<" color={"#01A6B3"} onPress={() => {}} />
+            <Text style={styles.priceLabel}>VALOR</Text>
+            <Button title=">" color={"#01A6B3"} onPress={() => {}} />
+        </View>
+    )
+
     return (
         <View style={styles.imageContainer}>
             {renderLogoBox()}
@@ -38,6 +46,7 @@ export default function CardView(){
             <Divider />
 
             <BuyButton />
+            {renderPriceControls()}
         </View>
     );
 }
