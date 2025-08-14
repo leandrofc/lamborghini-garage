@@ -11,7 +11,8 @@ export const styles = StyleSheet.create({
         borderRadius: 8
     },
     button: {
-        flexDirection: "row"
+        flexDirection: "row",
+        alignItems: "center"
     },
     icon: {
         marginRight: 10,
