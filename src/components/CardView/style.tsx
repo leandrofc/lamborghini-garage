@@ -36,7 +36,8 @@ export const styles = StyleSheet.create({
         flex: 1,
         marginBottom: 10,
         width: "100%",
-        height: "100%"
+        height: "100%",
+        resizeMode: "contain"
     },
     priceLabelContainer: {
         flexDirection: "row",
