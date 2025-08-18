@@ -1,4 +1,9 @@
-import { View, Text, Image, Button } from "react-native";
+import {
+    View,
+    Text,
+    Image,
+    Button,
+} from "react-native";
 import { styles } from "./style";
 import Logo from "../../../assets/logo.png"
 import Divider from "../Divider";
@@ -6,7 +11,11 @@ import { CAR_ASSETS_BASE_URL } from "../../constants/car";
 import BuyButton from "../BuyButton";
 import { useEffect, useState } from "react";
 import { CarModel } from "./props";
-import { handleNextItem, handlePreviousItem, loadCarData } from "./actions";
+import {
+    handleNextItem,
+    handlePreviousItem,
+    loadCarData,
+} from "./actions";
 
 export default function CardView(){
     const [carData, setCarData] = useState<CarModel | null>(null);
